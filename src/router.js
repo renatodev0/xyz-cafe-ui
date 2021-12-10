@@ -5,10 +5,15 @@ Vue.use(VueRouter)
 
 const routes = [
     {
-        path: "",
+        path: "/",
         component: () => import(/* webpackChunkName: "home" */ "./views/home/Index.vue"), 
         children: [
-        
+        ]
+    },
+    {
+        path: "/menu",
+        component: () => import(/* webpackChunkName: "home" */ "./views/menu/Index.vue"), 
+        children: [
         ]
     }
 ]
